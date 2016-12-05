@@ -320,46 +320,6 @@ section.buttons{
     margin-bottom: 20px;
     overflow: hidden;
 } 
-/* Download section */
-.downloads{
-    background-color: #ff7d5a;
-}
-.downloads h2 {
-    font-size: 24px;
-}
-.downloads li, .downloads p, 
-.downloads h2, .downloads a, 
-.downloads, .downloads audio {
-    color: white;
-}
-.downloads li{
-    list-style: none;
-}
-.downloads li:before {
-    content: "\e080";
-    font-family: 'Glyphicons Halflings';
-    position: relative;
-    margin-right: 10px;
-    color: white;
-}
-.downloads ul>li:last-child:before  {
-    content: "";
-}
-.downloads li ul li:before,
-.downloads ul ul>li:last-child:before  {
-    content: "\25cf";
-    margin-right: 10px;
-}
-.downloads ul>li:last-child:before {
-    margin-right: 0;
-}
-.downloads ul li ul{
-    padding-left: 20px;
-}
-.downloads div div> ul,
-.downloads h2 {
-    padding-left: 14px;
-}
 
 .white { color: #ffffff; }
 
@@ -397,6 +357,17 @@ footer {
     .banner-title h3 {
         font-size: 40px;
     }
+}
+.link-container {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.link-container a.btn.link {
+    z-index: 9999;
+    display: block;
+    position: absolute;
+    bottom: 0;
 }
 
 /* Portrait tablet to landscape and desktop */
