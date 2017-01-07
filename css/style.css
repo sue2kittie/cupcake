@@ -1,0 +1,513 @@
+/***********************
+Name : Cake ;
+Author : Sura Karnawi;
+Date : Dec 2016 ;
+************************/
+
+/* COLORS */
+/* Pink #D984A1 */
+/* light pink #E9B0CD */
+/* Pale #D7C7AE */
+/* Dark Pale #736352 */
+/* Purple : #7363AB */
+/* Dark purple */
+/* Light purple : #AAAAFC */
+
+/* Global Classes */
+*:focus,
+*:hover, a:hover, a:visited, a:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.skew{
+    transform: skewY(-7deg);
+    -webkit-transform: skewY(-7deg);
+    -moz-transform: skewY(-7deg);
+    -o-transform: skewY(-7deg);
+}
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+ul.unstyled { list-style-type: none; }
+/*  TYPOGRAPHY - COLOR */
+body, html, h1 , h2, h3 , h4, h5 , h6, p , div, span, a, ul , li , *{
+    font-family: 'Dancing Script', cursive, sans-serif;
+    font-size: 15px;
+}
+.pink-bg{
+    background-color: #D984A1;
+}
+.light-pink-bg{
+    background-color: #E9B0CD;
+}
+.pale-bg{
+    background-color: #D7C7AE ;
+}
+.dark-pale-bg{
+    background-color: #736352;
+}
+.dark-purple-bg{
+    background-color: #2c2244;
+}
+.purple-bg{
+    background-color: #7363AB ;
+}
+.light-purple-bg{
+    background-color: #AAAAFC;
+}#AA92FC
+.purple-clr,
+a.purple-clr{
+    color: #7363AB;
+}
+a.btn {
+    display: block;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 14px 30px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    border-radius: 0;
+    font-weight: bold;
+    position: relative;
+    opacity: 0.85;
+}
+a.btn.link {
+    text-align: left;
+    padding: 14px 30px;
+}
+ .btn:visited{
+    color: white;
+ }
+a.btn:hover , .btn.focus, .btn:focus {
+    color: #d2d2d2;
+    color: #FFF;
+    opacity: 0.9;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+span.glyphicon.glyphicon-play, span.fa.fa-chevron-right {
+    position: absolute;
+    top: 40%;
+    right: 30px;
+}
+#ajax-content a.btn{
+    width: 75%;
+    margin-bottom: 0;
+    background-color: #E9B0CD;
+}
+a.back-btn, a.back-btn:visited{
+    color: #302d57;
+}
+a.back-btn {
+    font-size: 24px;
+}
+
+/* Layouts */
+.jumbotron {
+    padding:0;
+    margin: 0;
+    background-color: #D7C7AE;
+}
+.banner-title {
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.banner-title h3 , .banner-title p , .banner-title a{
+    font-size: 21px;
+    color: #302d57;
+    font-weight: bold;
+}
+.banner-title h3 {
+    font-size: 52px;
+}
+.container,
+.jumbotron .container {
+    max-width: 970px;
+}
+.desktop-nav .container{
+    max-width: 1000px;
+}
+/*#ajax-content .container,
+section.buttons .container,
+section#main-content .container{
+    padding: 0;
+}*/
+/* Header */
+#header-banner{
+    width: 100%;
+}
+.jumbotron {
+    padding:0;
+}
+header .logo{
+	display: block;
+	width: 80px;
+  height: 90px;
+  position: absolute;
+  z-index: 9999;
+}
+header .logo img{
+	display: block;
+	width: 100%;
+    height: auto;
+	height: auto;
+}
+.navbar-inverse {
+	background-color: white;
+	border: none;
+}
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0px;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #E9B0CD;
+}
+.navbar-inverse .navbar-toggle {
+    border-color: #E9B0CD;
+    border: 2px solid #E9B0CD;
+    border-radius: 0;
+    margin-top: 23px;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #E9B0CD;
+    border-color: #E9B0CD;
+    border-radius: 0;
+}
+.navbar-inverse .navbar-nav>li>a {
+	transition: color 1s ease-out;
+}
+.navbar-inverse .navbar-nav>li>a,
+.navbar-inverse .navbar-nav> a,
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus {
+    color: #D984A1;
+    color:  #2c2244;
+    background-color: transparent;
+    font-size: 17px;
+}
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+    background-color: #D984A1;
+}
+.navbar-inverse .navbar-toggle:focus > .icon-bar ,
+.navbar-inverse .navbar-toggle:hover > .icon-bar{
+    background-color: white;
+}
+.navbar-nav>li {
+
+}
+.navbar-nav>li:first-child{
+	border-left: none;
+}
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>.active>a:hover {
+    color: #E9B0CD;
+}
+.desktop-nav {
+	background-color: #FFF;
+    border: none;
+}
+.navbar-nav>.active>a:hover {
+    color: #E9B0CD;
+ }
+ /* Main Section */
+ .questionare-btn{
+ 	background: transparent url('../img/btn-questionare.png') no-repeat;
+ 	display: block;
+ 	width: 370px;
+    height: 100px;
+    background-size: 100%;
+ }
+
+.stick{
+    display: block;
+    width: 19px;
+    height: 171px;
+    height: 54%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 90;
+    transition: height 1s ease-in;
+    transition: all 1s ease-out;
+}
+.stick .top,
+.stick .bottom {
+    width: 100%;
+    display: block;
+    background-color: #302d57;
+}
+.stick .top{
+    height: 21%;
+    margin-bottom: -2%;
+}
+.stick .bottom{
+    height: 80%;
+}
+.quest-btn{
+    display: block;
+    width: 358px;
+    height: 67px;
+    line-height: 60px;
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 999;
+    transition: all 1s ease-out;
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    word-spacing: 6px;
+}
+a.quest-btn:hover{
+    color: white;
+    text-decoration: none;
+}
+a.quest-btn:hover + .stick .top{
+    transition: all 1s ease-out;
+    transform: skewY(0deg);
+    -webkit-transform: skewY(0deg);
+    -moz-transform: skewY(0deg);
+    -o-transform: skewY(0deg);
+}
+span.word-space-dot {
+    word-spacing: -2px;
+    font-size: 25px;
+}
+/* TABS/ Banners */
+.tab{
+    display: none;
+}
+#tabs hr{
+    display: none;
+}
+.tab h2,
+#ajax-content h2,
+.tab p,  #ajax-content p {
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+h1, h2.tab h2,
+ #ajax-content  h2 {
+    color: #D984A1;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 35px;
+    text-transform: capitalize;
+}
+
+/* BUTTONS Section */
+section.buttons{
+    margin-top:14px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.white { color: #ffffff; }
+
+.social-block { margin: 95px 0; }
+
+.largeicon { font-size: 50px; margin-right: 10px; }
+
+/* VIDEO  AUDIO IFRAME */
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+
+/* FOOTER */
+footer {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+ }
+ footer p{
+    font-size: 14px;
+ }
+/* Nav Breaking point -  Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 999px) {
+	/*To fix the broken nav into 2 lines */
+	.navbar .container{
+		padding: 0;
+	}
+	.navbar-inverse .navbar-collapse{
+		padding: 0
+	}
+	.navbar .nav>li>a {
+    	padding-left: 11px;
+    	padding-right: 11px;
+	}
+    .banner-title h3 {
+        font-size: 40px;
+    }
+}
+.link-container {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.link-container a.btn.link {
+    z-index: 9999;
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (max-width: 1250px) and (min-width: 979px) {
+	.nav>li>a {
+	    padding: 15px 19px;
+	}
+
+}
+
+/* Large desktop  */
+@media (min-width: 1250px) {
+	.nav>li>a {
+	    padding: 15px 20px;
+	}
+    #ajax-content a.btn{
+        width: 50%;
+    }
+}
+
+/* Portrait tablet, landscape and desktop */
+@media screen and (min-width: 768px) {
+    .desktop-nav {
+        height: 51px;
+    }
+}
+
+@media (min-width: 768px)  {
+    .navbar-nav>li>a {
+        font-size: 14px;
+    }
+    a.btn.link {
+        padding: 14px 75px;
+    }
+    span.glyphicon.glyphicon-play,span.fa.fa-chevron-right {
+        right: 75px;
+    }
+    .tab h2, #ajax-content h2,
+    .tab p,  #ajax-content p {
+        max-width: 65%;
+    }
+    h1 , h2 , .tab h2, #ajax-content  h2 {
+        margin-top: 45px;
+        font-size: 32px;
+    }
+
+    .downloads div div > ul,
+    .downloads h2 {
+        padding-left: 60px;
+    }
+
+}
+/* Desktop */
+@media (min-width: 768px){
+    .navbar-nav {
+        float: left;
+        margin: 0;
+        padding-left: 30px;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	.desktop-nav{
+		border-color: #302d57;
+	}
+    .banner-title {
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+    .banner-title h3 , .banner-title p , .banner-title a{
+        font-size: 16px;
+    }
+    .banner-title h3 {
+        font-size: 21px;
+        margin-top: 5px;
+        margin-bottom: 7px;
+    }
+    a.btn {
+        font-size: 16px;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    a.btn, a.btn.link {
+        padding: 14px 11px;
+        font-size: 12px;
+    }
+    span.glyphicon.glyphicon-play , span.fa.fa-chevron-right{
+        right: 10px;
+        font-size: 12px
+    }
+    #ajax-content a.btn {
+        width: 85%;
+        font-size: 13px;
+    }
+    .quest-btn {
+        width: 280px;
+        background-size: 100%;
+        font-size: 22px;
+        line-height: 44px;
+    }
+
+}
+.jumbotron img{display: none}
+.jumbotron{
+  width: 100%;
+  min-height: 440px;
+  position: relative;
+  background-position: center center;;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../img/sexy-cake.jpg');
+}
+/* cake backgrounds and links */
+.link-container img{display: none;}
+.link-container{
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+}
+.cake0{
+  background-image: url('../img/cake-wedding.jpg');
+}
+.cake1{
+  background-image: url('../img/cake-cupcake.jpg');
+}
+.cake2{
+  background-image: url('../img/cake-whitecupcake.jpg');
+}
+.cake3{
+  background-image: url('../img/cake-pie.jpg');
+}
+.cake4{
+  background-image: url('../img/cake-syrup.jpg');
+}
+#map{
+  width: 90%;
+  height: 300px;
+  margin: 20px;
+}
+section.buttons{
+  background-color: #2c2244;
+  margin: 30px auto 100px auto;
+
+}

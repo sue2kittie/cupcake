@@ -8,63 +8,57 @@
 	<link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/template.css">
-	<style type="text/css">
-		video {
-		  width: 100%    !important;
-		  height: auto   !important;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 <body role="document" id="top">
 <header>
 	 <nav class="navbar navbar-inverse">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 col-sm-6">
+				<div class="col-md-2 col-sm-2">
 		      		<a  href="/" class="navbar-brand logo" role="link">
-		      			<img src="img/logo-cupcake.jpg" width="50px">
+		      			<img src="img/logo-cupcake.png" width="50px">
 		      		</a>
 		    	</div>
-		    	<div class="col-md-6 col-sm-6">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9" aria-expanded="false">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-					</div>
+		    	<div class="col-md-10 col-sm-10">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="desktop-nav">
+								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+									<ul class="nav navbar-nav">
+										<li>
+											<a href="/"> </a>
+										</li>
+												<li>
+													<a href="#cake0">Wedding Cake</a>
+												</li>
+												<li>
+													<a href="#cake1">Birthday Cake</a>
+												</li>
+												<li>
+													<a href="#cake2">Cupcake</a>
+												</li>
+												<li>
+													<a href="#cake3">American Pies</a>
+												</li>
+												</li>
+												<li>
+													<a href="#cake4">Syrup Cake</a>
+												</li>
+									</ul>
+								</div>
+						</div>
 				</div>
 			</div>
 		</div>
-		<div class="desktop-nav">
-			<div class="container">
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
-					<ul class="nav navbar-nav">
-						<li>
-							<a href="/"> </a>
-						</li>
-				        <li>
-				        	<a href="#">Wedding Cake</a>
-				        </li>
-				        <li>
-				        	<a href="#">Birthday Cake</a>
-				        </li>
-				        <li>
-				        	<a href="#">Cupcake</a>
-				        </li>
-				        <li>
-				        	<a href="#">American Pies</a>
-				        </li>
-				        </li>
-				        <li>
-				        	<a href="#">Syrup Cake</a>
-				        </li>
-					</ul>
-				</div>
-			</div>
-		</div>
+
 	</nav>
 </header>
 <section>
@@ -78,58 +72,47 @@
 		<div class="row">
 			<div class="col-md-12">
 				<h1 class="text-center">Welcome to Nirvana Cupcakes </h1>
-				<h3>Fluid Youtube Video</h3>
-				<figure>
-					<iframe width="100%" height="auto" src="https://www.youtube.com/embed/4SqXUKe_MJE" frameborder="0" allowfullscreen></iframe>
-				</figure>
 			</div>
 			<div class="col-md-12">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consequat odio nec ligula scelerisque tristique. Morbi faucibus quis enim in tempor. Pellentesque vitae nulla eu urna  justo, eu consequat nisl diam in est. Praesent suscipit ante efficitur sem venenatis, vel tristique dolor euismod. Aliquam ligula urna, consectetur sed odio in, aliquet pulvinar nulla.</p>
-
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consequat odio nec ligula scelerisque tristique. Morbi faucibus quis enim in tempor. Pellentesque vitae nulla eu urna  justo, eu consequat nisl diam in est. Praesent suscipit ante efficitur sem venenatis, vel tristique dolor euismod. Aliquam ligula urna, consectetur sed odio in, aliquet pulvinar nulla.</p>
 			</div>
-
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div id="map"></div>
+			</div>
 		</div>
 	</div>
 </section>
 <section class="buttons">
 	<div class="container">
 		<div class="row">
-			<div class="link-container">
-				<a href="ajax.html#1" class="btn link dark-purple-bg">Wedding Cake <span class="glyphicon glyphicon-play" data-unicode="e072"></span></a>
+			<div id="cake0" class="link-container">
+				<a href="ajax.html#1" class="btn link dark-purple-bg">Wedding Cake <span class="fa fa-chevron-right" data-unicode="e072"></span></a>
 			</div>
-			<div class="link-container">
-				<a href="ajax.html#2" class="btn link dark-purple-bg">Birthday Cake<span class="glyphicon glyphicon-play" data-unicode="e072"></span></a>
+			<div id="cake1"class="link-container">
+				<a href="ajax.html#2" class="btn link dark-purple-bg">Birthday Cake<span class="fa fa-chevron-right" data-unicode="e072"></span></a>
 			</div>
-			<div class="link-container">
-				<a href="ajax.html#3" class="btn link dark-purple-bg">Cupcake <span class="glyphicon glyphicon-play" data-unicode="e072"></span></a>
+			<div id="cake2" class="link-container">
+				<a href="ajax.html#3" class="btn link dark-purple-bg">Cupcake <span class="fa fa-chevron-right" data-unicode="e072"></span></a>
 			</div>
-			<div class="link-container">
-				<a href="ajax.html#4" class="btn link dark-purple-bg">American Pie<span class="glyphicon glyphicon-play" data-unicode="e072"></span></a>
+			<div id="cake3" class="link-container">
+				<a href="ajax.html#4" class="btn link dark-purple-bg">American Pie<span class="fa fa-chevron-right" data-unicode="e072"></span></a>
 			</div>
-			<div class="link-container">
-				<a href="ajax.html#5" class="btn link dark-purple-bg">Syrup Cake<span class="glyphicon glyphicon-play" data-unicode="e072"></span></a>
+			<div id="cake4" class="link-container">
+				<a href="ajax.html#5" class="btn link dark-purple-bg">Syrup Cake<span class="fa fa-chevron-right" data-unicode="e072"></span></a>
 			</div>
 		</div>
 	</div>
 </section>
-
 <section class="light-pink-bg">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6">
-				<h2>Cafe's</h2>
-				<ul>
-					<li>bullet</li>
-					<li>
-						<ul>
-							<li>sub bullet</li>
-							<li>sub bullet</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-			<div class="col-md-6">
-				<p id="demo"></p>
+			<div class="col-md-12">
+				<h3>Cafe's</h3>
+				<p> <i class="fa fa-coffee" aria-hidden="true"></i> urpis ac, interdum sodales mauris. Cras nec velit dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+				<p> <i class="fa fa-coffee" aria-hidden="true"></i> ivamus consequat odio nec ligula scelerisque tristique. </p>
+				<h3> </h3>
 			</div>
 		</div>
 	</div>
@@ -137,11 +120,8 @@
 <footer class="dark-purple-bg white">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-5">
-				<p> &copy; Sura Creativity ltd. 2016. All Rights Reserved</p>
-			</div>
-			<div class="col-md-7 footer-links">
-				<a href="http://google.ca"></a>
+			<div class="col-md-12">
+				<p class="text-center"> Sura Creativity ltd. &copy; 2017. All Rights Reserved</p>
 			</div>
 		</div>
 	</div>
@@ -191,11 +171,10 @@ $(function () {
 	            var showData = $('#ajax-content');
 	            showData.empty();
 	            $.getJSON('js/data.json', function (data) {
-	            	console.log('data', data);
 	            	var itemTitle = data.tabs[i].title;
 	            	var itemTxt = data.tabs[i].txt;
 	            	var itemImgSrc = data.tabs[i].imgSrc;
-        			var content = '<div class="container city-bg"><div class="row">' + '<img src="'+itemImgSrc+'" width="100%" alt="image" ><h2>'+ itemTitle+'</h2><br /><p>'+ itemTxt +'</p></div></div><p>Thank you for visitng!</p>><br /><a href="#" class="back-btn btn center-block">Back to Nirvana Cupcakes</a>' ;
+        			var content = '<div class="container city-bg"><div class="row">' + '<img src="'+itemImgSrc+'" width="100%" alt="image" ><h2>'+ itemTitle+'</h2><br /><p>'+ itemTxt +'</p></div></div><p>Thank you for visitng!</p>><br /><a href="#" class="back-btn btn center-block"><i class="fa fa-birthday-cake" aria-hidden="true"></i> Close</a>' ;
         			showData.html(content);
         			checkBackBtnClick() ;
 	            });
@@ -209,13 +188,11 @@ $(function () {
 		$('div.link-container').each(function(i){
 				$.getJSON('js/data.json', function (data) {
 					var itemImgSrc = data.tabs[i].imgSrc;
-					//console.log('itemimage', itemImgSrc);
-					var content ="<img src="+itemImgSrc+" width='100%'/>";
-					//$($('a.link')[i]).append( content  );
-					console.log(i);
 					var tempClass;
+					var tempId;
+					tempId = 'cake'+i;
 					tempClass = 'cake'+i;
-					console.log(tempClass);
+					var content ="<img id="+tempId+" src="+itemImgSrc+" width='100%'/>";
 					$($('div.link-container')[i]).addClass(tempClass);
 					$($('div.link-container')[i]).prepend( content  );
 				 });
@@ -226,6 +203,18 @@ $(function () {
 
 });//end of document ready
 
+
 </script>
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(43.761539, -79.411079), zoom: 10, scrollwheel: false
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB91xZeTN8CkZMFvOmELjZsqWOaRgjhR3w&callback=myMap"></script>
 </body>
 </html>
