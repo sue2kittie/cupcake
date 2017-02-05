@@ -32,7 +32,7 @@ ul.unstyled { list-style-type: none; }
 /*  TYPOGRAPHY - COLOR */
 body, html, h1 , h2, h3 , h4, h5 , h6, p , div, span, a, ul , li , *{
     font-family: 'Dancing Script', cursive, sans-serif;
-    font-size: 15px;
+    font-size: 18px;
 }
 .pink-bg{
     background-color: #D984A1;
@@ -66,7 +66,7 @@ a.btn {
     text-align: center;
     padding: 14px 30px;
     margin-bottom: 5px;
-    font-size: 18px;
+    font-size: 20px;
     border-radius: 0;
     font-weight: bold;
     position: relative;
@@ -143,9 +143,9 @@ section#main-content .container{
     padding:0;
 }
 header .logo{
-	display: block;
-	width: 80px;
-  height: 90px;
+    display: block;
+    width: 110px;
+  height: 110px;
   position: absolute;
   z-index: 9999;
 }
